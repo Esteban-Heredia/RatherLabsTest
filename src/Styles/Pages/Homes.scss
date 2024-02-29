@@ -1,0 +1,115 @@
+.container-main-home {
+    background-color: #050505;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    .container-video {
+        width: 30%;
+    }
+
+    .container-text {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        max-width: 32rem;
+
+        h1 {
+            font-family: "EditorialNew";
+            font-size: 4rem;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 1rem;
+            line-height: 112%;
+        }
+
+        h2 {
+            font-family: "SuisseIntl";
+            font-size: 1.125rem;
+            color: white;
+            font-weight: 400;
+            line-height: 178%;
+            max-width: 18rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .container-link {
+        width: 100%;
+        max-width: 18rem;
+
+        .link-icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+
+            a {
+                text-decoration: none;
+                color: white;
+                transition: 0.3s ease;
+                font-family: "SuisseIntl";
+            }
+
+            svg {
+                color: white;
+                font-size: 0.75rem;
+                width: 1rem;
+                height: 1rem;
+                transition: 0.3s ease;
+            }
+        }
+
+        .container-line {
+            position: relative;
+            overflow: hidden;
+            height: 20px;
+
+            .line-white {
+                width: 100%;
+                border-bottom: 1px solid white;
+                position: absolute;
+                transform: translateX(0);
+            }
+
+            .line-gray {
+                width: 100%;
+                position: absolute;
+                border-bottom: 1px solid gray;
+                transition: transform 0.3s ease;
+                transform: translateX(-100%);
+            }
+        }
+
+    }
+
+    .container-link:hover {
+
+        .link-icons {
+            a {
+                transition: 0.3s ease;
+                padding-left: 0.75rem;
+            }
+
+            svg {
+                color: white;
+                font-size: 0.75rem;
+                width: 1rem;
+                height: 1rem;
+                transform: rotate(-45deg);
+                transition: 0.3s ease;
+            }
+        }
+        .container-line {
+            .line-gray {
+                transform: translateX(0);
+                transition: transform 0.3s ease;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'EditorialNew';
+    src: url('../Fonts/PPEditorialNew-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SuisseIntl';
+    src: url('../Fonts/SuisseIntl-Regular.ttf') format('truetype');
+}
+
+
+@import './Pages/Homes.scss';
+
+@import './Components/VideoHome.scss';
+
